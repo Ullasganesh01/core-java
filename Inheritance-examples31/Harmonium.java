@@ -1,0 +1,3 @@
+class Harmonium extends MusicalIns{
+
+}

@@ -1,0 +1,3 @@
+class MLA extends Minister{
+
+}
