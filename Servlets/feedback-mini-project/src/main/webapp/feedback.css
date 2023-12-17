@@ -1,0 +1,50 @@
+/* --------------------------- form ----------------------------- */
+
+.form-container{
+    background-color:#EEE2DE;
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+}
+
+table,td{
+    /* border: 1px solid black; */
+    padding: 20px;
+    padding-top: 10px;
+}
+
+td{
+    text-align: start;
+    vertical-align: top;
+}
+
+input,textarea{
+    padding: 4px;
+    border-radius: 4px;
+}
+
+
+h4{
+    margin-top: 5px;
+}
+
+.btn{
+    background-color: #B31312;
+    padding: 7px;
+}
+
+span{
+    display: none;
+}
+
+.error{
+    color: red;
+}
+/* ----------------------------------------------------------------- */
+
+#time{
+    margin-left: 30px;
+ }

@@ -1,0 +1,16 @@
+/* -------------------form------------------- */
+.form-container{
+    margin-top: 2vh;
+    width: 35vw;
+    text-align: center;
+}
+
+table{
+    margin: auto;
+}
+
+td{
+    margin-left: 100px;
+}
+
+/* ------------------------------------------- */

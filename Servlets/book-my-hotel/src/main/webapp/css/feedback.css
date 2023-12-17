@@ -1,0 +1,63 @@
+/* --------------------------- form ----------------------------- */
+
+.form-container{
+    background-color:#AFD3E2;
+    display: block;
+    width: fit-content;
+    padding: 20px;
+    margin: auto;
+    margin-top: 10vh;
+    border-radius: 10px;
+}
+
+table,td{
+    /* border: 1px solid black; */
+    padding: 20px;
+    padding-top: 10px;
+}
+
+td{
+    text-align: start;
+    vertical-align: top;
+}
+
+input,textarea,select{
+    padding: 4px;
+    border-radius: 4px;
+}
+
+
+h4{
+    margin-top: 5px;
+}
+
+.btn{
+    background-color: #19A7CE;
+    padding: 7px;
+}
+
+span{
+    display: none;
+}
+
+.error{
+    color: red;
+}
+
+label{
+    color: #146C94;
+    font-stretch: expanded;
+    font-weight: 400;
+}
+/* ----------------------------------------------------------------- */
+
+/* --------------------------footer--------------------------------- */
+.footer {
+    position: absolute;
+}
+
+#time{
+    display: inline;
+}
+
+/* ----------------------------------------------------------------- */

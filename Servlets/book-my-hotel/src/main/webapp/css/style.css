@@ -1,0 +1,123 @@
+body{
+    margin: 0px;
+    background-color: #F6F1F1;
+}
+
+/*-------------------------------- nav bar-------------------------------- */
+ul.horizontal {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #AFD3E2;
+}
+
+ul.horizontal li {
+  float: left;
+}
+
+ul.horizontal li a {
+  display: inline-block;
+  color: #146C94;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.horizontal li a:hover:not(.active) {
+  color: #F6F1F1;
+  background-color: #19A7CE;
+}
+
+#title{
+  display: inline; 
+  height: 48px;
+  font-weight: 300;
+}
+
+/* ---------------------------------------------------------------------------- */
+  
+/* -----------------------------------------images in body-------------------------------- */
+#images-grid{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 10px;
+  align-items: start;
+  justify-content: center;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+  width: 300px;
+}
+
+div.gallery:hover {
+  border: 2px solid #19A7CE;
+}
+
+div.gallery img {
+  width: 100%;
+  height: 10rem;
+}
+
+div.desc {
+  padding: 15px;
+  padding-top: 5px;
+  text-align:center;
+}
+
+.img-title{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/* -------------------------------------------------------------------------------- */
+
+/*-------------------------------------- footer -------------------------------- */
+  .footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #AFD3E2;
+    color: #146C94;
+    text-align: center;
+    display: block;
+ }
+
+ .footer ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 0px;
+ }
+
+ .footer ul li{
+    margin-left: 20px;
+ }
+
+ #time{
+    margin:auto;
+    position: relative;
+    left: 30vw;
+    font-size:smaller;
+ }
+ .links{
+    margin-left: 200px;
+    display: flex;
+    position: absolute;
+    right: 40px;
+ }
+
+
+
+ /* ------------------------------------------------------------------------------- */

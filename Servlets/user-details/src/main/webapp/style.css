@@ -1,0 +1,155 @@
+
+body {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;;
+    color: #fff;
+    padding: 1px;
+}
+
+/* div {
+    text-align: center;
+    margin-top: 20px;
+} */
+
+button {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px ;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #27ae60;
+}
+
+/* #buttons button{
+    margin: 0 auto;
+    display: block;
+} */
+
+#foot {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    justify-content: end;
+    padding: 10px 0;
+}
+
+footer {
+    /* position: relative;
+    right: 0px; */
+    font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+#form-container {
+    width: 70%;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 80px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+  padding: 10px;
+  display: inline;
+  align-items: center;
+}
+#nxtpage{
+    position: fixed;
+    top: 12px;
+    right: 20px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+table{
+    /* border: 2px solid black; */
+    width: 100%;
+}
+
+td{
+    /* border: 1px solid black; */
+    padding: 10px;
+    /* text-align :center; */
+    margin: 5px 5px;
+}
+
+input,select{
+    margin: 7px;
+    padding: 5px;
+    width: 150px;
+}
+
+.error-message{
+    color: red;
+    display: none;
+    font-size: smaller;
+}
+
+#submit{
+    background-color: #2ecc71;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#reset{
+    background-color: #2ecc71;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#agree{
+    width: 20px;
+}
