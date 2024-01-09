@@ -11,4 +11,7 @@ public interface PassportRepository {
     PassportDto getPassportById(int id);
     boolean updatePassport(PassportDto dto);
     List loginUser(String loginId, String password);
+    List<PassportDto> filterPassportsByFirstName(String firstName);
+    List<PassportDto> filterPassportsByEmail(String email);
+    List<PassportDto> filterPassportsByFirstNameAndEmail(String firstName,String email);
 }

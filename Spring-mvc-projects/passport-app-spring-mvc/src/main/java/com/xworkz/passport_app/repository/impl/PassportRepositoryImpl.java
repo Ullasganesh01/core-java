@@ -82,4 +82,21 @@ public class PassportRepositoryImpl implements PassportRepository {
         em.getTransaction().commit();
         return true;
     }
+
+    @Override
+    public List<PassportDto> filterPassportsByFirstName(String firstName) {
+        EntityManager em = entityManagerFactory.createEntityManager();
+        return em.createNamedQuery("filterByFirstName").setParameter("firstName",firstName).getResultList();
+    }
+    @Override
+    public List<PassportDto> filterPassportsByEmail(String email) {
+        EntityManager em = entityManagerFactory.createEntityManager();
+        return em.createNamedQuery("filterByEmail").setParameter("email",email).getResultList();
+    }
+
+    @Override
+    public List<PassportDto> filterPassportsByFirstNameAndEmail(String firstName, String email) {
+        EntityManager em = entityManagerFactory.createEntityManager();
+        return em.createNamedQuery("filterByFirstNameAndEmail").setParameter("firstName",firstName).setParameter("email",email).getResultList();
+    }
 }

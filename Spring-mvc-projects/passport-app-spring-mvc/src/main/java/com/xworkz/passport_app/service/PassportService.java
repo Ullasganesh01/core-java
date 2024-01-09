@@ -16,4 +16,7 @@ public interface PassportService {
     boolean validateAndUpdatePassport(PassportDto dto);
 
     boolean validateAndLoginUser(String loginId, String password);
+
+    List<PassportDto> validateAndFilter(String firstName,String email);
+
 }

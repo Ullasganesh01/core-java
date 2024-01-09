@@ -18,7 +18,10 @@ import java.util.Date;
         @NamedQuery(name = "getUserByLoginIdAndPassword",query = "select dto from PassportDto dto where dto.loginId=: loginId and dto.password =: password "),
         @NamedQuery(name = "getLoginId",query = "select dto.loginId from PassportDto dto"),
         @NamedQuery(name = "getAllPassports",query = "from PassportDto dto"),
-        @NamedQuery(name = "getPassportById",query = "from PassportDto dto where dto.id=:id")
+        @NamedQuery(name = "getPassportById",query = "from PassportDto dto where dto.id=:id"),
+        @NamedQuery(name = "filterByFirstName",query = "from PassportDto dto where dto.firstName LIKE CONCAT('%',:firstName,'%') "),
+        @NamedQuery(name = "filterByEmail",query = "from PassportDto dto where dto.email LIKE CONCAT('%',:email,'%') "),
+        @NamedQuery(name = "filterByFirstNameAndEmail",query = "from PassportDto dto where dto.firstName LIKE CONCAT('%',:firstName,'%') OR dto.email LIKE CONCAT('%',:email,'%') ")
 })
 public class PassportDto {
     @Id

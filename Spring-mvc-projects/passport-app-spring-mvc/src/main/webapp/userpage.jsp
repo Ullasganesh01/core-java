@@ -43,11 +43,35 @@
                 #deletebtn {
                     background-color: rgba(235, 56, 21, 0.938);
                 }
+
+                .active {
+                    padding: 5px;
+                    background-color: #04AA6D;
+                    border-radius: 8px;
+                  }
+
+                  #search-engine{
+                    padding: 5px;
+                    border-radius: 8px;
+                  }
+
+                  .search{
+                    position: absolute;
+                    right: 0px ;
+                  }
             </style>
         </head>
 
         <body>
+<div class="search">
+        <form action="getPassports">
 
+          <input id="search-engine" type="search" placeholder="Search by first name" name="firstName" aria-label="Search">
+          <input id="search-engine" type="search" placeholder="Search by email" name="email" aria-label="Search">
+          <button class="active" type="submit">Search</button>
+
+        </form>
+</div>
             <div id="table-container">
                 <h2 style="width: fit-content;
                 margin: auto;">List Of Users</h2>
@@ -116,6 +140,7 @@
             <div id="backend-messages">
                 <h3> ${ message }</h3>
                 <h3> ${ nousers } </h3>
+                <h3> ${ noRecordsError } </h3>
                 <h3>${param.updateMessage}</h3>
                 <h3>${param.deleteMessage}</h3>
             </div>

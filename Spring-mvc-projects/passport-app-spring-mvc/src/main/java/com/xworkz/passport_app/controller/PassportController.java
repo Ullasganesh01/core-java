@@ -95,4 +95,23 @@ public class PassportController {
         }
         return "error";
     }
+
+    @GetMapping("getPassports")
+    public String getPassports(@RequestParam String firstName,@RequestParam String email,Model model){
+        if (email.isEmpty()&&firstName.isEmpty()){
+            return getAllPassports(model);
+        }
+        else{
+            List passports = service.validateAndFilter(firstName,email);
+            if(passports!=null && !passports.isEmpty()){
+                model.addAttribute("passports",passports);
+                System.out.println(passports);
+                return "userpage";
+            }
+            else {
+                model.addAttribute("noRecordsError","No records found");
+                return "userpage";
+            }
+        }
+    }
 }

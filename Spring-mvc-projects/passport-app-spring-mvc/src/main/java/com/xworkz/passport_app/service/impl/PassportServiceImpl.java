@@ -132,4 +132,17 @@ public class PassportServiceImpl implements PassportService {
         }
         return false;
     }
+
+
+    @Override
+    public List<PassportDto> validateAndFilter(String firstName, String email) {
+        if (!firstName.isEmpty() && !email.isEmpty()){
+            return repository.filterPassportsByFirstNameAndEmail(firstName,email);
+        }else if (!firstName.isEmpty()){
+            return repository.filterPassportsByFirstName(firstName);
+        } else if (!email.isEmpty()) {
+            return repository.filterPassportsByEmail(email);
+        }
+        return null;
+    }
 }
